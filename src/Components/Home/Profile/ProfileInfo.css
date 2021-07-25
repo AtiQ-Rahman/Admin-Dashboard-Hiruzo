@@ -1,0 +1,19 @@
+  
+
+  .blogs:hover {
+    box-shadow: 10px 10px 20px rgb(224, 161, 161);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  /* .blog-content {
+  
+    background-color: white;
+  } */
+
+  .background-red {
+    background-color: red;
+  }
+  
+  .background-blue {
+    background-color: blue;
+  }
