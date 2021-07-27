@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './OrderInfo.css'
 
 
-const StoriesInfo = ({newPost}) => {
+const OrderInfo = ({newPost}) => {
  
 
     const statusColor = (status) => {
@@ -58,4 +58,4 @@ const StoriesInfo = ({newPost}) => {
     );
 };
 
-export default StoriesInfo;
+export default OrderInfo;

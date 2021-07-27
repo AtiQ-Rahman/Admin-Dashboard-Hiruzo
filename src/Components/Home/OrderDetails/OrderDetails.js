@@ -21,6 +21,7 @@ function OrderDetails() {
   const orderList = profile.find(profiles => profiles?._id === _id);
 
   const handleAcceptBooking = (secretCode) => {
+    alert('Accepted');
     const putMethod = {
       method: 'PUT',
       headers: {
@@ -31,9 +32,12 @@ function OrderDetails() {
       }) // We send data in JSON format
     };
     fetch('http://localhost:3000/api/booking/accepted',
-      putMethod).then(res => window.location.href = "/home");
+      putMethod).then(res =>
+       
+        window.location.href = "/home");
   };
   const handleRejectBooking = (secretCode) => {
+    alert('Rejected');
     const putMethod = {
       method: 'PUT',
       headers: {
@@ -44,7 +48,9 @@ function OrderDetails() {
       }) // We send data in JSON format
     };
     fetch('http://localhost:3000/api/booking/rejected',
-      putMethod).then(res => window.location.href = "/home");
+      putMethod).then(res => 
+        
+        window.location.href = "/home")
   };
 
   const time = (checkInTime) => {
