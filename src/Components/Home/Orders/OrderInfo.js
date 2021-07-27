@@ -1,6 +1,6 @@
 import React, { } from 'react';
 import { Link } from 'react-router-dom';
-import './ProfileInfo.css'
+import './OrderInfo.css'
 
 
 const StoriesInfo = ({newPost}) => {
@@ -24,7 +24,7 @@ const StoriesInfo = ({newPost}) => {
         <div class="card-body">
             <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
-                <Link style={{textDecoration:'none'}}  to={`/ProfileDetails/${newPost._id}`}>
+                <Link style={{textDecoration:'none'}}  to={`/OrderDetails/${newPost._id}`}>
                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                     <h3 className="text-dark text-center">{newPost.name}</h3>
                     </div>

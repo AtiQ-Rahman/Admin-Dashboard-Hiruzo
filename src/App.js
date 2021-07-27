@@ -9,8 +9,7 @@ import {
 import Home from "./Components/Home/Home/Home";
 
 import Login from "./Components/Login/Login";
-import PrivateRoute from "./Components/Login/PrivateRoute";
-import ProfileDetails from './Components/Home/OrderDetails/OrderDetails';
+import OrderDetails from './Components/Home/OrderDetails/OrderDetails';
 
 
 export const UserContext = createContext();
@@ -21,15 +20,15 @@ function App() {
 
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    // <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+
     <Router>
     <Switch>
       <Route path ="/home">
       <Home></Home>
       </Route>
      
-      <Route  path ="/ProfileDetails/:_id">
-        <ProfileDetails></ProfileDetails>
+      <Route  path ="/OrderDetails/:_id">
+        <OrderDetails></OrderDetails>
       </Route>
      
       <Route exact path= "/">
@@ -38,8 +37,6 @@ function App() {
     </Switch>
   </Router>
 
-
-  // </UserContext.Provider>
 
 
   );

@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
-import Profile from '../Profile/Profile';
+import Order from '../Orders/Order';
 
 const Home = () => {
     return (
         <div>
            <Navbar></Navbar> 
          
-           <Profile></Profile>
+           <Order></Order>
         </div>
     );
 };

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ProfileInfo from './ProfileInfo';
+import OrderInfo from './OrderInfo';
 
 
 
-const Profile = () => {
+const Order = () => {
     const [newPosts, setNewPosts] = useState([]);
     useEffect(() => {
         fetch('http://localhost:3000/api/booking')
@@ -21,7 +21,7 @@ const Profile = () => {
             </div>
             <div className=" row  ">
                  {
-                     newPosts.map(newPost => <ProfileInfo
+                     newPosts.map(newPost => <OrderInfo
                         newPost={newPost} key={newPost._id}/>)
                  }
              </div>
@@ -31,4 +31,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default Order;

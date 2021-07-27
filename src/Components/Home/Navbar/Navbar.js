@@ -1,11 +1,10 @@
 import React,{useContext} from 'react';
 import { Link } from 'react-router-dom';
-import { UserContext } from './../../../App';
+
 const Navbar = () => {
-  // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
     return (
         <div className='navar-container'>
-          {/* <UserContext.Provider value={[loggedInUser, setLoggedInUser]}> */}
             
              <nav class="navbar navbar-expand-lg navbar-light  text-white">
   <div class="container-fluid">
@@ -29,35 +28,18 @@ const Navbar = () => {
         <li class="nav-item">
           <Link class="nav-link ms-5 text-brand btn btn-outline-secondary" to="/home">About</Link>
         </li>
-        {/* <li class="nav-item">
-          <Link class="nav-link ms-5 text-brand " to="/">Login</Link>
-        </li> */}
+
 
         <li class="nav-item">
-        {/* <Link class="nav-link ms-5 text-brand " > {loggedInUser.email}</Link> */}
          <Link class="nav-link ms-5 text-brand btn btn-light font-weight-bold" >Admin</Link> 
         </li>
 
-        
-       
-      
-       
-       
-      
-     
-       
-        {/* <li class="nav-item">
-          <Link class="nav-link ms-5 text-brand " to="/login">login</Link>
-        </li> */}
-        
-      
-      
       </ul>
       
     </div>
   </div>
 </nav>
-{/* </UserContext.Provider> */}
+
         </div>
     );
 };
